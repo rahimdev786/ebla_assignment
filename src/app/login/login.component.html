@@ -1,0 +1,15 @@
+<div class="main">
+    <h1>School Managment System</h1>
+    <h3>Enter your login credentials</h3>
+  <form (ngSubmit)="login()"  [formGroup]="loginform">
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" formControlName = "username" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" formControlName = "password" required>
+    </div>
+    <button type="submit" [disabled]="loginform.invalid">Login</button>  
+  </form>
+  </div>
